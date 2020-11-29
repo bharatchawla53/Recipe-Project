@@ -1,7 +1,6 @@
 .wrapper {
     display: flex;
     width: 100%;
-    
 }
 
 #sidebar {
@@ -15,7 +14,6 @@
     z-index: 9999;
     background: #333;
     color: #fff;
-    transition: all 0.3s;
 }
 
 #sidebar .sidebar-header {
@@ -143,4 +141,3 @@ ul ul a {
     color: #333; 
     background: #828181; 
 } 
-
