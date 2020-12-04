@@ -141,3 +141,48 @@ ul ul a {
     color: #333; 
     background: #828181; 
 } 
+
+.page-region {
+    background-image: url("../../assets/images/food-ingredient.jpg");
+    margin-top: -30px;
+    width: 100%;
+    height: 500px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.page-region .find-a-recipe {
+    font-family: 'Source Serif Pro';
+    font-weight: bold;
+    font-size: xxx-large;
+    color: rgb(255, 255, 255);
+    margin: 7.625rem 0 1.125rem;
+    display: inline-block;
+}
+
+.container {
+    background-color: rgba(255,255,255,0.75);
+    background-position: 11px 50%;
+    background-size: 21px 21px;
+    height: 50px;
+    padding: 16px;
+    width: 42%;
+    border: none;
+    outline: none;
+    font-family: 'Source Serif Pro';
+    font-size: medium;
+}
+
+#searchBtn {
+    background: none !important;
+    border: none !important;
+    margin-left: -50px;
+    outline: none;
+    font-size: x-large;
+}
+
+#searchBtn:focus {
+    box-shadow: none !important;
+}

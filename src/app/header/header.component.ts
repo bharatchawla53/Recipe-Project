@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-header',
@@ -9,6 +10,10 @@ export class HeaderComponent implements OnInit {
 
   isToggled : boolean = false; 
   isDismiss : boolean = false; 
+  searchRecipeForm = new FormGroup({
+    searchRecipe : new FormControl('')
+  });
+
   constructor() { }
 
   ngOnInit(): void {
@@ -22,5 +27,8 @@ export class HeaderComponent implements OnInit {
     this.isToggled = false; 
   }
 
+  onSearchRecipeFormSubmit() {
+    console.log(this.searchRecipeForm.get('searchRecipe')?.value);
+  }
 
 }
