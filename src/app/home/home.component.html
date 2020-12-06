@@ -48,9 +48,9 @@
 </div>
 
 <!-- to show matched results on the screen  -->
-<div>
-    <div *ngFor="let item of matchedRecipes">
-        <img src={{item.display.images[0]}} (click) = "onImageClick(item.display.displayName)"/>
+<div class="matchedRecipes">
+    <div *ngFor="let item of matchedRecipes" class="column">
+        <img src={{item.display.images[0]}} id ="selectedRecipe" (click) = "onImageClick(item.display.displayName)"/>
         <p>{{item.display.displayName}}</p>
     </div>
 </div>

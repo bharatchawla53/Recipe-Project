@@ -16,19 +16,11 @@ export class RecipeComponent implements OnInit {
   constructor(private route : ActivatedRoute, private recipeSerivce : recipeYummyService) { }
 
   ngOnInit(): void {
-    // this.paramsData = this.router.snapshot.params['name']; //get the selected recipe name
-    // this.recipeSerivce
-    //     .fetchFeedsRecipes(this.paramsData)
-    //     .subscribe(res => {
-    //       this.recipeData = res; 
-    //       this.recipeData = this.recipeData.feed[0]; 
-    //       console.log(this.recipeData);
-    //     });
-
     this.route.data
         .subscribe(
           (data : Data) => {
             this.recipeData = data['recipe'].feed[0];
+            console.log(this.recipeData);
           } 
         );
 

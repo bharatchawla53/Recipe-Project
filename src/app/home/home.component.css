@@ -55,7 +55,7 @@ p {
     font-size: 1.1em;
     font-weight: 300;
     line-height: 1.7em;
-    color: #999;
+    color: rgb(53, 49, 49);
 }
 
 a, a:hover, a:focus {
@@ -185,4 +185,28 @@ ul ul a {
 
 #searchBtn:focus {
     box-shadow: none !important;
+}
+
+#selectedRecipe {
+    width: 70%;
+    height: 250px;
+    border-radius: 50%;
+}
+
+.matchedRecipes{ 
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+@media screen and (max-width: 500px) {
+    .column {
+      width: 100%;
+    }
 }

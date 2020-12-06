@@ -42,6 +42,7 @@ export class HomeComponent implements OnInit {
   }
 
   onImageClick(data : string) {
+    console.log(data);
     this.router.navigate(['/recipe', data]);
   }
 

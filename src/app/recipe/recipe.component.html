@@ -1,3 +1,14 @@
-<p>recipe works!</p>
-<img src={{recipeData.display.images[0]}}/>
-<p>{{recipeData.display.displayName}}</p>
+<div class="column">
+    <img src={{recipeData.display.images[0]}} id="selectedRecipe"/>
+    <p>{{recipeData.display.displayName}}</p>
+    
+    <h3>Ingredients</h3>
+    <div class="add-ingredient" *ngFor="let ingredient of recipeData.content.ingredientLines">
+        <i class="fas fa-clipboard-list"></i> 
+        <li class="ingredientLine">
+            <span class="amount">{{ ingredient.quantity }} </span>
+            <span class="unit">{{ ingredient.unit }} </span>
+            <span class="ingredient">{{ ingredient.ingredient }} </span> 
+        </li>
+    </div>
+</div>

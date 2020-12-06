@@ -1,0 +1,32 @@
+#selectedRecipe {
+    width: 100%;
+    height: 250px;
+    border-radius: 10%;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+.ingredientLine {
+    padding: 0.5em 0;
+    font-size: 16px;
+    line-height: 1.5;
+    display: block;
+    margin-left: 0.5em;
+    max-width: calc(100% - 24px);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.add-ingredient {
+    display: flex;
+    align-items: center;
+}
+
+.fa, .fas {
+    color: teal;
+    margin-left: 50px;
+}
+
