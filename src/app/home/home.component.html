@@ -11,16 +11,16 @@
 
         <ul class="list-unstyled components">
             <li>
-                <a href="#">RECIPES AND MENUS</a>
+                <a [routerLink]="['/recipe']" routerLinkActive="router-link-active" >RECIPES AND MENUS</a>
             </li>
             <li>
-                <a href="#">EXPERT ADVISE</a>
+                <a [routerLink]="['/recipe']" routerLinkActive="router-link-active" >EXPERT ADVISE</a>
             </li>
             <li>
-                <a href="#">INGREDIENTS</a>
+                <a [routerLink]="['/recipe']" routerLinkActive="router-link-active" >INGREDIENTS</a>
             </li>
             <li>
-                <a href="#">CONTACT</a>
+                <a [routerLink]="['/recipe']" routerLinkActive="router-link-active" >CONTACT</a>
             </li>
         </ul>
     </nav>
@@ -45,4 +45,17 @@
         <input type="text" class="container" formControlName="searchRecipe">
         <button class="btn" id="searchBtn"><i class="fas fa-search"></i></button>
     </form>
+</div>
+
+<!-- to show matched results on the screen  -->
+<div>
+    <!-- <div *ngFor="let item of matchedRecipes">
+        <img src={{item.display.images[0]}}/>
+        <p>{{item.display.displayName}}</p>
+    </div> -->
+
+    <!-- need to figure out how to send data when clicked on an image  -->
+    <a [routerLink]="['/recipe', 'Chicken Alfredo']" routerLinkActive="router-link-active" >
+        <img src="https://lh3.googleusercontent.com/RSke6ZPXPcXBIwuA7RSna5WYN6rsFz-DPMESCeoKehRUvp9AGVOEZMdxZ_7WJ-FjbB9YnUxVIS-NBh0cNBsNH_I"/>
+    </a>
 </div>
