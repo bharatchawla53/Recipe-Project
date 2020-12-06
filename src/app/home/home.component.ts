@@ -38,11 +38,11 @@ export class HomeComponent implements OnInit {
           this.matchedRecipes = res; 
           this.matchedRecipes = this.matchedRecipes.feed; 
           console.log(this.matchedRecipes);
-
-          //direct to the recipes component and from their based on user selection
-          // we can call recipe component ?? 
-          this.router.navigate(['/recipes']);
         });
+  }
+
+  onImageClick(data : string) {
+    this.router.navigate(['/recipe', data]);
   }
 
 }
