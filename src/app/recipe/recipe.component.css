@@ -1,13 +1,13 @@
 #selectedRecipe {
     width: 100%;
-    height: 250px;
+    height: 450px;
     border-radius: 10%;
 }
 
 .column {
     float: left;
     width: 33.33%;
-    padding: 5px;
+    padding: 15px;
 }
 
 .ingredientLine {

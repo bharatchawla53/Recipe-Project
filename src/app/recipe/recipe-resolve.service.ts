@@ -13,7 +13,7 @@ import { recipeYummyService } from './recipe.service';
 export class RecipeResolve implements Resolve<any>{
     constructor(private recipeService : recipeYummyService) {}
 
-    resolve(route : ActivatedRouteSnapshot, state : RouterStateSnapshot) : Observable<any> | Promise<any>  {
+    resolve(route : ActivatedRouteSnapshot) : Observable<any> | Promise<any>  {
         return this.recipeService.fetchFeedsRecipes(route.params['name']);
     }
 }
